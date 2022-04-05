@@ -2,6 +2,8 @@ import './App.css';
 import Logo from './components/Files/img/Logo.png';
 import { useEffect , useState } from 'react';
 import React from 'react';
+import ProductList from './components/ProductList';
+import Cart from './components/Cart';
 
 
 
@@ -19,6 +21,27 @@ function App() {
     .catch((err)=>err)
   })
 
+  function treatedPrice(price){
+    const priceStr = price.toString()
+   
+    if(priceStr.includes(".")){
+      return `R$${priceStr.replace(".", ",")}`
+      
+    }
+   
+    return `R$${priceStr},00`
+    
+    
+  }
+
+  let key = 0
+
+  function keyGen(){
+       
+    key++    
+    return key
+  }
+ 
   return (
     <div className="App">
       <header className="App-header">
@@ -31,8 +54,8 @@ function App() {
       </form>
       </header>
       <main className='App-main'>
-
-
+        <ProductList products={products}  treatedPrice={treatedPrice} setCurrentSale={setCurrentSale} currentSale={currentSale} keyGen={keyGen}/>
+        <Cart currentSale={currentSale}   treatedPrice={treatedPrice} setCurrentSale={setCurrentSale} keyGen={keyGen} />
       </main>
     </div>
   );

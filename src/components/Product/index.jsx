@@ -1,8 +1,10 @@
 import "./style.css"
 
 
-function Product({product}){
-    const {id,img,name,category,price} = product
+function Product({product,treatedPrice,addCart}){
+  const {id,img,name,category,price} = product
+  
+  
   return(
     <li className="Product--container">
       <figure className="Product--imgContainer">
@@ -11,8 +13,8 @@ function Product({product}){
       
       <h3 className="Product--name">{name}</h3>
       <p className="Product--category">{category}</p>
-      <p className="Product--valor">R$ {price},00</p>
-      <button id={id} className="addCartBTN">Adicionar</button>
+      <p className="Product--valor">{treatedPrice(price)}</p>
+      <button id={id} className="addCartBTN" onClick={addCart}>Adicionar</button>
 
     </li>
   )
