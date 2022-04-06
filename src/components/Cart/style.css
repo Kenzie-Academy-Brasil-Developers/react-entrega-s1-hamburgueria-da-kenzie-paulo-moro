@@ -1,0 +1,78 @@
+.CartInfo--container{    
+  display: flex;
+  flex-direction: column;
+  width: 402px;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-left: 16px;
+  background-color: #F5F5F5;
+}
+.Cart--container{
+  margin-top:21px;
+  margin-bottom: 0px;
+}
+.Cart-tittle{
+  width: 382px;
+  height: 65px;
+  background-color: #27AE60;
+  border-radius: 5px 5px 0px 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding-left: 20.3px;
+  margin: 0px;
+}
+.CartIinfo--opcoes{
+  width: 343px;
+  align-self: center;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+}
+.CartInfo--divisor{
+  width: 343px;
+  height: 2px;
+  background-color: #E0E0E0;
+
+}
+.CartInfo--total{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+.CartInfo--total span{
+  color: #828282;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.Cart--removerTodos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #E0E0E0;
+  width: 343px;
+  height: 60px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}

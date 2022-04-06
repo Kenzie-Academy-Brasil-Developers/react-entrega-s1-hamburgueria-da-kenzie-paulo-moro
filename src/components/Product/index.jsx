@@ -10,12 +10,12 @@ function Product({product,treatedPrice,addCart}){
       <figure className="Product--imgContainer">
         <img className="Product--img" src={img} alt="FotoDoProduto" />
       </figure>
-      
-      <h3 className="Product--name">{name}</h3>
-      <p className="Product--category">{category}</p>
-      <p className="Product--valor">{treatedPrice(price)}</p>
-      <button id={id} className="addCartBTN" onClick={addCart}>Adicionar</button>
-
+      <section className="Product--InfoContainer">
+        <h3 className="Product--name">{name}</h3>
+        <p className="Product--category">{category}</p>
+        <p className="Product--valor">{treatedPrice(price)}</p>
+        <button id={id} className="addCartBTN" onClick={addCart}>Adicionar</button>
+      </section>
     </li>
   )
 }

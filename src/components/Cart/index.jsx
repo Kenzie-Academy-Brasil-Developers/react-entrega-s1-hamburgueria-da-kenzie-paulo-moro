@@ -39,8 +39,12 @@ function Cart({currentSale,setCurrentSale,treatedPrice,keyGen}){
         }
 
       </ul>
-      <p className="CartInfo--total">Total: {totalCart()} </p>
-      <button className="Cart--removerTodos" onClick={rmvALL}>Remover todos</button>
+      <section className="CartIinfo--opcoes">
+        <div className="CartInfo--divisor"></div>
+        <p className="CartInfo--total">Total: <span>{totalCart()}</span>  </p>
+        <button className="Cart--removerTodos" onClick={rmvALL}>Remover todos</button>
+      </section>
+      
     </aside>
   )
 }

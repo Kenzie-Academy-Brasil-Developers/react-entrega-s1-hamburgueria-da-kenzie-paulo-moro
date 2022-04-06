@@ -9,10 +9,9 @@ import Cart from './components/Cart';
 
 
 function App() {
-  const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [products, setProducts] = useState([]);  
   const [currentSale, setCurrentSale] = useState([])
-  const [cartTotal, setCartTotal] = useState(0)
+
 
   useEffect(()=>{
     fetch('https://hamburgueria-kenzie-json-serve.herokuapp.com/products')
@@ -36,8 +35,7 @@ function App() {
 
   let key = 0
 
-  function keyGen(){
-       
+  function keyGen(){       
     key++    
     return key
   }

@@ -1,3 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+body{
+  width: 414px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+}
+.App-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.Header--LogoContainer{
+  width: 158.94px;
+  height: 36.83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PesquisaProdutos--container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 382px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 2px solid #E0E0E0;
+  padding: 0px 10px 0px 15px;
+  margin-left: 30px;   
 
+}
+.PesquisaProdutos--input{
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  height: 58px;
+  width: 382px;
+  outline: none;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #E0E0E0;
+  border: none;  
+
+}
+
+.PesquisaProdutos--submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 40px;
+  border: 2px solid #27AE60;
+  background-color: #27AE60;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}

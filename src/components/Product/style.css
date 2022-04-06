@@ -1,0 +1,78 @@
+.Product--container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 346px;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 2px solid #E0E0E0
+}
+.Product--imgContainer{
+    width: 300px;
+    height: 150px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+.Product--img{
+    width: 177px;
+    height: 177px;
+}
+.Product--name{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+    padding-left: 21px;
+
+}
+.Product--category{
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 21px;
+  color: #828282;
+
+}
+.Product--valor{
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #27AE60;
+  padding-left: 21px;
+}
+.addCartBTN{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#27AE60;
+  border: 2px solid #27AE60;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-left: 21px;
+  width: 106px;
+  height: 40px;
+ 
+}
+.Product--InfoContainer{
+  height: 196px;
+  background-color: #FFFFFF;
+ 
+}

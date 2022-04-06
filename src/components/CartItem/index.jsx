@@ -16,10 +16,12 @@ function CartItem({productSale,setCurrentSale, currentSale,treatedPrice}){
       <figure className="CartItem--imgContainer">
         <img  className="CartItem--img" src={img} alt="FotoProduto"/>
       </figure>
-      <h3 className="CartItem--Title">{name}</h3>
-      <p  className="CartItem--Category">{category}</p>
-      <p  className="CartItem--Valor"> {treatedPrice(price)}</p>
-      <button id={id} className="CartItem--Rmv-BTN" onClick={rmvCart}>Remover</button>      
+      <section className="CartItem--InfoContainer">
+        <h3 className="CartItem--Title">{name}</h3>
+        <p  className="CartItem--Category">{category}</p>
+        
+        <button id={id} className="CartItem--Rmv-BTN" onClick={rmvCart}>Remover</button>
+      </section>      
     </li>
   )
 

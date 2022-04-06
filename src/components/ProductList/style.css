@@ -1,0 +1,6 @@
+.ProductList--Container{
+    display: flex;
+    justify-content: space-between;
+    width: 1920px;
+    padding-left: 16px;
+}
