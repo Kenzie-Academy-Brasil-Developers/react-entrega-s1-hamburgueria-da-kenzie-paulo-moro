@@ -76,3 +76,37 @@
   line-height: 19px;
   color: #828282;
 }
+.Cart--empty{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Cart--emptyTittle{
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+}
+.Cart--emptyText{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #828282;
+}
+@media(min-width:720px){
+  .CartInfo--container{
+    height: fit-content;
+    margin-top:17px;
+    width: 386px;
+  }
+  .Cart-tittle{
+    width: 365px;
+    line-height: 65px;
+  }
+}

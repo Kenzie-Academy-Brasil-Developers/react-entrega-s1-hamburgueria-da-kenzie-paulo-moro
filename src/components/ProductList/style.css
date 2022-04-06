@@ -1,6 +1,50 @@
 .ProductList--Container{
-    display: flex;
-    justify-content: space-between;
-    width: 1920px;
+    display: flex;    
+    width: 317px;
+    overflow: hidden;
+    overflow-x:scroll;
     padding-left: 16px;
+    align-self: center;
+}
+.ProductList--SearchResult{
+  font-family: 'Inter';
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+  margin-left: 35px;
+}
+.ProductList--SearchResult.Mobile{
+  display: flex;
+}
+.ProductList--SearchResult.Desk{
+  display: none;
+}
+@media(min-width:720px){
+  .ProductList--Container{
+    flex-wrap:wrap ;
+    overflow: unset;
+    overflow-x:unset;
+    width:fit-content ;
+    height: fit-content;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-width: 980px;
+    max-height: 700px;
+    align-self: unset;
+  
+  }
+  .ProductList--SearchResult{
+    width: 100%;
+    height: 25px;
+  }
+  .ProductList--SearchResult.Mobile{
+    display: none;
+  }
+  .ProductList--SearchResult.Desk{
+    display: flex;
+    margin-left: unset;
+  }
 }

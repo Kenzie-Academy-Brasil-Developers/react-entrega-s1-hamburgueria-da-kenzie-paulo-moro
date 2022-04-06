@@ -4,26 +4,18 @@ import CartItem from "../CartItem"
 function Cart({currentSale,setCurrentSale,treatedPrice,keyGen}){
   function totalCart(){
     
-    let valorTotal = 0
-
-    for(let i = 0; i < currentSale.length;i++){     
-      valorTotal+=currentSale[i].price
-      
-    }
-    
-    const valorTotalStr = valorTotal.toFixed(2)
-    if(valorTotalStr.includes(".")){
-      
-      return `R$${valorTotalStr.replace(".", ",")}`
-      
-    }
-    
-    return `R$${valorTotalStr},00`  
+    let total = currentSale.reduce((acc, valorAtual)=>{
+      return acc+valorAtual.price
+    },0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+    return total
     
   }
+
   function rmvALL(){
     setCurrentSale([])
   }
+
+  if(currentSale.length > 0){
   
   return(
     <aside className="CartInfo--container">
@@ -33,7 +25,7 @@ function Cart({currentSale,setCurrentSale,treatedPrice,keyGen}){
           currentSale.map((productSale)=>{
             
             return(
-              <CartItem productSale={productSale} setCurrentSale={setCurrentSale} currentSale={currentSale} key={keyGen()} treatedPrice={treatedPrice}/>
+              <CartItem productSale={productSale} setCurrentSale={setCurrentSale} currentSale={currentSale} key={keyGen()} treatedPrice={treatedPrice} keyGen={keyGen} id={keyGen()}/>
             )
           })
         }
@@ -46,7 +38,21 @@ function Cart({currentSale,setCurrentSale,treatedPrice,keyGen}){
       </section>
       
     </aside>
-  )
+  )}
+  else if(currentSale.length === 0){
+    return(
+      <aside className="CartInfo--container">
+        <h3 className="Cart-tittle">Carrinho de compras</h3>
+        <ul className="Cart--container">      
+          <li className="Cart--empty">
+            <h3 className="Cart--emptyTittle" >Sua sacola está vazia</h3>
+            <p className="Cart--emptyText" >adicione itens</p>
+          </li>
+
+        </ul>           
+      </aside>
+    )
+  }
 }
 
 

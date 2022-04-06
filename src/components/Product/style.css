@@ -5,7 +5,8 @@
     height: 346px;
     justify-content: space-between;
     border-radius: 5px;
-    border: 2px solid #E0E0E0
+    border: 2px solid #E0E0E0;
+    margin-right: 21px;
 }
 .Product--imgContainer{
     width: 300px;
@@ -75,4 +76,15 @@
   height: 196px;
   background-color: #FFFFFF;
  
+}
+.Product--container:hover{
+  opacity: 0.8;
+  border: 2px solid #333333;
+}
+
+@media(min-width:720px){
+  .Product--container{
+    margin-bottom: 12px;
+    
+  }
 }
