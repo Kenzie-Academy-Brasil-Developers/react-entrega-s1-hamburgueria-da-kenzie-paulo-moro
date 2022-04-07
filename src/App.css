@@ -40,7 +40,8 @@ main{
   width: 382px;
   border-radius: 8px;
   padding-left: 20px;
-  border: 2px solid #E0E0E0
+  border: 2px solid #E0E0E0;
+ 
 }
 .PesquisaProdutos--input:focus{
   color: #828282;
@@ -56,10 +57,14 @@ main{
     flex-direction: row;
     justify-content: space-between;
     height: 80px;
+    margin-top:10px
   }
   main{
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+  }
+  .PesquisaProdutos--input{
+    margin-right: 10px;
   }
 }

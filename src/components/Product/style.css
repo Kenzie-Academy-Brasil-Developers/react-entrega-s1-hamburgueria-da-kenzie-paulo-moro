@@ -82,7 +82,7 @@
   border: 2px solid #333333;
 }
 
-@media(min-width:720px){
+@media(min-width:740px){
   .Product--container{
     margin-bottom: 12px;
     

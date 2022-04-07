@@ -22,7 +22,7 @@
 .ProductList--SearchResult.Desk{
   display: none;
 }
-@media(min-width:720px){
+@media(min-width:740px){
   .ProductList--Container{
     flex-wrap:wrap ;
     overflow: unset;
@@ -34,7 +34,7 @@
     max-width: 980px;
     max-height: 700px;
     align-self: unset;
-  
+    justify-content: center;
   }
   .ProductList--SearchResult{
     width: 100%;

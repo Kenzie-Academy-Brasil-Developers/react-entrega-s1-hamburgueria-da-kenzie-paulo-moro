@@ -24,7 +24,6 @@ function ProductList({products,treatedPrice,setCurrentSale,currentSale,keyGen,fi
   }
   
   return(
-
     <ul className="ProductList--Container">      
       { 
         products.filter((item)=>item.name.toLowerCase().includes(filterWord)||item.category.toLowerCase().includes(filterWord)).map((product)=>{
