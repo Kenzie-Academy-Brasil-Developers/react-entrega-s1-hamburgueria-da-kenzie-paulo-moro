@@ -2,7 +2,8 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 21px;  
+  margin-bottom: 21px;
+  padding-left: 0px;  
 }
 .CartItem--imgContainer{
   width: 80px;
